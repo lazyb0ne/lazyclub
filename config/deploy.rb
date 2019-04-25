@@ -2,7 +2,7 @@
 lock "~> 3.11.0"
 
 set :rvm_ruby_version, '2.3.1'
-set :application, "my_app_name"
+set :application, "lazyclub"
 set :repo_url, "git@github.com:lazyb0ne/lazyclub.git"
 
 # Default branch is :master
