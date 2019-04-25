@@ -1,6 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.0"
 
+set :rvm_ruby_version, '2.3.1'
 set :application, "my_app_name"
 set :repo_url, "git@github.com:lazyb0ne/lazyclub.git"
 
@@ -21,7 +22,7 @@ set :deploy_to, "/home/www/lazyclub"
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, 'config/database.yml', 'config/secrets.yml', 'puma.rb' #, 'config/application.yml', '.env'
+append :linked_files, 'config/database.yml', 'config/secrets.yml', 'config/puma.rb' #, 'config/application.yml', '.env'
 
 # Default value for linked_dirs is []
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
