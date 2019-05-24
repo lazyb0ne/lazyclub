@@ -65,3 +65,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # 微信
 # gem 'weixin_rails_middleware'
 gem 'weixin_rails_middleware', git: "https://github.com/lanrion/weixin_rails_middleware.git"
+# gem 'weixin_rails_middleware', :path => 'vendor/weixin_rails_middleware'
+gem 'weixin_authorize'
