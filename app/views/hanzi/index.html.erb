@@ -1,27 +1,24 @@
 <%=javascript_include_tag "hanzi-writer.min" %>
 <div id="character-target-div"></div>
-<button id="animate-button">Animate</button>
-<div id="character-target-div-2"></div>
+<button id="animate-button" style="width:280px;height:140px" >Animate</button>
+<div id="character-target-div-2" ></div>
+
 <script>
-var writer = HanziWriter.create('character-target-div', '田', {
-  width: 800,
-  height: 800,
+var writer = HanziWriter.create('character-target-div', '是', {
+  width: 600,
+  height: 600,
   padding: 1,
   showOutline: true
 });
 document.getElementById('animate-button').addEventListener('click', function() {
   writer.animateCharacter();
 });
-
-
-var writer2 = HanziWriter.create('character-target-div-2', '田', {
+var writer2 = HanziWriter.create('character-target-div-2', '是', {
   width: 800,
   height: 800,
   showCharacter: false,
   padding: 5
 });
 writer2.quiz();
-      
-
 </script>
-
+ 
